@@ -1,0 +1,352 @@
+body{
+    background-color: #000;
+    // display: none;
+}
+
+.content__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    margin-bottom: 80px;
+    .header-logo{
+        padding: 0 10px;
+        img{
+            max-width: 65px;
+            height: auto;
+        }
+    }
+    .berlin-berlin{
+        text-align: center;
+        padding-right: 10px;
+        img{
+            max-width: 150px;
+            height: auto;
+            // padding: 10px 0;
+        }
+    }
+    .info-help{
+        padding: 20px;
+        a{
+            i{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.main-content{
+    padding: 0 150px;
+    .main-content__info{
+        .first-child-h1{
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: .6px;
+        }
+        .first-child-p{
+            color: #fff !important;
+            text-align: center;
+            padding: 10px 50px;
+            margin-bottom: 20px;
+        }
+        .last-child-h1{
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .last-child-p{
+            color: #fff;
+            text-align: center;
+            padding: 10px 50px 0 50px;
+            margin-bottom: 60px;
+        }
+    }
+    .main-content_contact{
+        margin: 0 auto;
+        width: fit-content;
+        height: 100%;
+        background-color: #fff;
+        padding: 5px 10px;
+        margin-bottom: 60px;
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    .main-content__ar-effect{
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+            width: 50px;
+            height: auto;
+        }
+    }
+}
+
+// --------------------- MediaQuery ---------------------------
+
+@media screen and (max-width: 1440px){
+    .content__header{
+        .header-logo{
+            img{
+                max-width: 105px;
+                height: auto;
+            }
+        }
+        .berlin-berlin{
+            img{
+                max-width: 220px;
+                height: auto;
+            }
+        }
+        .info-help{
+            a{
+                i{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .main-content{
+        padding: 0 150px;
+        .main-content__info{
+            .first-child-h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 36px;
+                margin-bottom: 40px;
+            }
+            .first-child-p{
+                font-size: 35px;
+                padding: 0 160px;
+                letter-spacing: 0.8px;
+                margin-bottom: 60px;
+            }
+            .last-child-h1{
+                font-size: 40px;
+            }
+            .last-child-p{
+                font-size: 35px;
+                padding: 0 160px;
+                letter-spacing: 0.8px;
+                margin-bottom: 60px;
+            }
+        }
+        .main-content_contact{
+            a{
+                font-size: 40px;
+            }
+        }
+        .main-content__ar-effect{
+
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .main-content{
+        padding: 0 150px;
+        .main-content__info{
+            .first-child-p{
+                font-size: 25px;
+                padding: 0 40px;
+            }
+            .last-child-p{
+                font-size: 25px;
+                padding: 0 40px;
+            }
+        }
+        .main-content__ar-effect{
+            img{
+                width: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content__header{
+        margin-bottom: 50px;
+        .header-logo{
+            img{
+                max-width: 65px;
+                height: auto;
+            }
+        }
+        .berlin-berlin{
+            img{
+                max-width: 180px;
+                height: auto;
+            }
+        }
+        .info-help{
+            a{
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .main-content{
+        padding: 0 150px;
+        .main-content__info{
+            .first-child-h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 26px;
+            }
+            .first-child-p{
+                font-size: 20px;
+                padding: 0 10px;
+            }
+            .last-child-h1{
+                font-size: 30px;
+            }
+            .last-child-p{
+                font-size: 20px;
+                padding: 0 10px;
+                margin-bottom: 40px;
+            }
+        }
+        .main-content_contact{
+            margin-bottom: 30px;
+            a{
+                font-size: 28px;
+            }   
+        }
+        .main-content__ar-effect{
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .content__header{
+        .header-logo{
+            img{
+                max-width: 45px;
+                height: auto;
+            }
+        }
+        .berlin-berlin{
+            img{
+                max-width: 140px;
+                height: auto;
+            }
+        }
+    }
+    .info-help{
+        a{
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+    .main-content{
+        padding: 0px 20px !important;
+        .main-content__info{
+            .first-child-h1{
+                font-size: 24px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .first-child-p{
+                margin-bottom: 40px;
+            }
+            .last-child-h1{
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .content__header{
+        margin-bottom: 30px;
+    }
+    .main-content{
+        padding: 0 150px;
+        .main-content__info{
+            h2{
+                margin-bottom: 30px;
+            }
+            .first-child-p{
+                margin-bottom: 30px;
+            }
+            .last-child-h1{
+                margin-bottom: 20px;
+            }
+        }
+        .main-content_contact{
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .content__header{
+        margin-bottom: 60px;
+        .berlin-berlin{
+            img{
+                max-width: 120px;
+                height: auto;
+            }
+        }
+        .info-help{
+            a{
+                i{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .main-content{
+        padding: 0 150px;
+        .main-content__info{
+            .first-child-h1{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 16px;
+            }
+            .first-child-p{
+                font-size: 16px;
+            }
+            .last-child-h1{
+                font-size: 20px;
+            }
+            .last-child-p{
+                font-size: 16px;
+                margin-bottom: 60px;
+            }
+        }
+        .main-content_contact{
+            margin-bottom: 60px;
+        }
+        .main-content__ar-effect{
+            img{
+                width: 60px;
+            }
+        }
+    }
+}
