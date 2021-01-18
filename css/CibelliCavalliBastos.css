@@ -1,6 +1,6 @@
 body {
   background-color: #000;
-  font-family: 'Univers LT Extended';
+  font-family: 'Univers LT Condensed';
 }
 
 .content__header {
@@ -112,6 +112,10 @@ body {
   height: auto;
 }
 
+.first-child-p, .last-child-p {
+  text-align: left !important;
+}
+
 @media screen and (max-width: 1440px) {
   .content__header .header-logo img {
     max-width: 105px;
@@ -162,6 +166,15 @@ body {
   .main-content {
     padding: 0 150px;
   }
+  .main-content .main-content__info .first-child-h1 {
+    font-size: 36px;
+  }
+  .main-content .main-content__info h2 {
+    font-size: 30px;
+  }
+  .main-content .main-content__info .last-child-h1 {
+    font-size: 36px;
+  }
   .main-content .main-content__info .first-child-p {
     font-size: 25px;
     padding: 0 40px;
@@ -194,21 +207,21 @@ body {
     padding: 0 150px;
   }
   .main-content .main-content__info .first-child-h1 {
-    font-size: 30px;
-  }
-  .main-content .main-content__info h2 {
     font-size: 26px;
   }
+  .main-content .main-content__info h2 {
+    font-size: 22px;
+  }
   .main-content .main-content__info .first-child-p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
     line-height: 20px;
   }
   .main-content .main-content__info .last-child-h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .main-content .main-content__info .last-child-p {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
     margin-bottom: 40px;
     line-height: 20px;
@@ -240,17 +253,21 @@ body {
     padding: 0px 20px !important;
   }
   .main-content .main-content__info .first-child-h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .main-content .main-content__info h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .main-content .main-content__info .first-child-p {
     margin-bottom: 40px;
+    font-size: 14px;
   }
   .main-content .main-content__info .last-child-h1 {
     font-size: 24px;
     margin-bottom: 30px;
+  }
+  .main-content .main-content__info .last-child-p {
+    font-size: 14px;
   }
 }
 
@@ -261,14 +278,24 @@ body {
   .main-content {
     padding: 0 150px;
   }
+  .main-content .main-content__info .first-child-h1 {
+    font-size: 20px;
+  }
   .main-content .main-content__info h2 {
     margin-bottom: 30px;
+    font-size: 18px;
   }
   .main-content .main-content__info .first-child-p {
     margin-bottom: 30px;
+    font-size: 14px;
   }
   .main-content .main-content__info .last-child-h1 {
     margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .main-content .main-content__info .last-child-p {
+    margin-bottom: 30px;
+    font-size: 14px;
   }
   .main-content .main-content_contact a {
     font-size: 20px;
@@ -296,14 +323,16 @@ body {
     font-size: 16px;
   }
   .main-content .main-content__info .first-child-p {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: left;
   }
   .main-content .main-content__info .last-child-h1 {
     font-size: 20px;
   }
   .main-content .main-content__info .last-child-p {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 60px;
+    text-align: left;
   }
   .main-content .main-content_contact {
     margin-bottom: 60px;

@@ -2,7 +2,7 @@ body {
   background-color: #000;
   font-weight: 300;
   font-style: normal;
-  font-family: 'Univers LT Extended';
+  font-family: 'Univers LT Condensed';
   height: 100%;
   width: 100%;
   position: fixed;
@@ -424,6 +424,9 @@ body {
   }
   .wrapper .slidersmall .slidersmall__info {
     font-size: 14px;
+  }
+  .wrapper .slidersmall .slidersmall__info p {
+    padding: 0 10px;
   }
 }
 
