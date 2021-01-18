@@ -9,7 +9,7 @@ $(document).ready(function(){
         dots: false,
         adaptiveHeight: true,
         slidesToScroll: 1,
-        speed: 400,
+        speed: 500,
         cssEase: 'ease-out',
         useTransform: true,
         initialSlide: 0,
@@ -28,49 +28,20 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '20px',
         slidesToScroll: 1,
-        speed: 400,
+        speed: 500,
         cssEase: 'ease-out',
         useTransform: true,
         waitForAnimate: false,
     });
 
-
-
-    // Основные события слайдера
-    // $('.sliderbig').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    //     console.log(currentSlide)
-    // })
-    // $('.sliderbig').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    //     console.log(currentSlide)
-    // })
-
-    // Основные методы слайдера
-    // $('.slider').slick('setPosition'); //"сброс" карусели
-    // $('.slider').slick('goTo', 4);
-    // $('.slider').slick('slickPrev'); // переназначение элементов управления
-    // $('.slider').slick('slickNext'); // переназначение элементов управления
-    // $("body").css("display", "none");
+    var scroll = function(e) {
+        if (stopScrollX || stopScrollY) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.scroll(scrollToX, scrollToY);
+        }
+    }
     
-    // $("body").fadeIn(1000);
-    
-    // $("a.transition").click(function(event){
-    //     event.preventDefault();
-    //     linkLocation = this.href;
-    //     $("body").fadeOut(1000, redirectPage);
-    // });
-    
-    // function redirectPage() {
-    //     window.location = linkLocation;
-    // }
-        // var body = $("body");
-        // body.fadeIn(600);
-        // $(document).on("click", "a:not([href^='#']):not([href^='tel']):not([href^='mailto'])", function(e) {
-        //     e.preventDefault();
-        //     $("body").fadeOut(400);
-        //     var self = this;
-        //     setTimeout(function () {
-        //     window.location.href = $(self).attr("href");
-        //     }, 400);
-        // });
+    document.addEventListener('mousewheel', scroll, false);
 });
 

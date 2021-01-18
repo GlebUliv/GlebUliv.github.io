@@ -3,11 +3,18 @@
     src: url(../fonts/UniversLTPro-55Roman.otf)
 }
 
+
 body{
     background-color: #000;
     font-weight: 300;
     font-style: normal;
-    font-family: "Univers LT Pro 55";
+    font-family: "Univers LT Pro";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    .mainwrapper {
+        margin: 0 auto;
+    }
 }
 
 .wrapper{
