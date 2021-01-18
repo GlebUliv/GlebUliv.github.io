@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  font-family: 'Univers LT Extended';
 }
 
 .content__header {
@@ -117,7 +118,7 @@ body {
     height: auto;
   }
   .content__header .berlin-berlin img {
-    max-width: 220px;
+    max-width: 360px;
     height: auto;
   }
   .content__header .info-help a i {
@@ -183,7 +184,7 @@ body {
     height: auto;
   }
   .content__header .berlin-berlin img {
-    max-width: 180px;
+    max-width: 220px;
     height: auto;
   }
   .content__header .info-help a i {
@@ -199,16 +200,18 @@ body {
     font-size: 26px;
   }
   .main-content .main-content__info .first-child-p {
-    font-size: 20px;
+    font-size: 16px;
     padding: 0 10px;
+    line-height: 20px;
   }
   .main-content .main-content__info .last-child-h1 {
     font-size: 30px;
   }
   .main-content .main-content__info .last-child-p {
-    font-size: 20px;
+    font-size: 16px;
     padding: 0 10px;
     margin-bottom: 40px;
+    line-height: 20px;
   }
   .main-content .main-content_contact {
     margin-bottom: 30px;
@@ -227,7 +230,7 @@ body {
     height: auto;
   }
   .content__header .berlin-berlin img {
-    max-width: 140px;
+    max-width: 160px;
     height: auto;
   }
   .info-help a i {

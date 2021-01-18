@@ -1,20 +1,15 @@
-@font-face {
-    font-family: Univers LT Pro 55;
-    src: url(../fonts/UniversLTPro-55Roman.otf)
-}
-
-
+// @font-face {
+//     font-family: UniversLTPro;
+//     src: url(../fonts/UniversLTPro-55Roman.otf);
+// }
 body{
     background-color: #000;
     font-weight: 300;
     font-style: normal;
-    font-family: "Univers LT Pro";
+    font-family: 'Univers LT Extended';
     height: 100%;
     width: 100%;
     position: fixed;
-    .mainwrapper {
-        margin: 0 auto;
-    }
 }
 
 .wrapper{
@@ -166,6 +161,7 @@ body{
             p{
                 color: #fff;
                 letter-spacing: 1px;
+                margin-bottom: 5px;
             }
             a{
                 text-transform: uppercase;
