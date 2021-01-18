@@ -3,18 +3,20 @@ $(document).ready(function(){
         infinite: true,
         centerMode: true,
         // variableWidth: true,
-        centerPadding: '60px',
+        // centerPadding: '60px',
         slidesToShow: 1,
         arrows: false,
         dots: false,
         adaptiveHeight: true,
         slidesToScroll: 1,
         speed: 400,
-        cssEase: 'ease',
+        cssEase: 'ease-out',
+        useTransform: true,
         initialSlide: 0,
         touchThreshold: 10,
         waitForAnimate: false,
         mobileFirst: true,
+        // fade: true,
         // appendDots: $('.NameClass'),
         asNavFor: ".slidersmall"
     });
@@ -27,7 +29,8 @@ $(document).ready(function(){
         centerPadding: '20px',
         slidesToScroll: 1,
         speed: 400,
-        cssEase: 'ease',
+        cssEase: 'ease-out',
+        useTransform: true,
         waitForAnimate: false,
     });
 
