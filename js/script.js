@@ -3,54 +3,17 @@ $(document).ready(function(){
         infinite: true,
         centerMode: true,
         // variableWidth: true,
-        // centerPadding: '20px',
+        centerPadding: '60px',
         slidesToShow: 1,
         arrows: false,
         dots: false,
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
         slidesToScroll: 1,
-        speed: 1000,
+        speed: 400,
         cssEase: 'ease',
         initialSlide: 0,
-        // autoplaySpeed: 1000,
         touchThreshold: 10,
         waitForAnimate: false,
-        // variableWidth: false,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             // centerMode: true,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             // centerMode: true,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             // centerMode: true,
-        //             centerPadding: '20px',
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 375,
-        //         settings: {
-        //             // centerMode: true,
-        //             centerPadding: '20px'
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 320,
-        //         settings: {
-        //             centerMode: true,
-        //             centerPadding: '20px'
-        //         }
-        //     },
-        // ],
         mobileFirst: true,
         // appendDots: $('.NameClass'),
         asNavFor: ".slidersmall"
@@ -63,7 +26,7 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '20px',
         slidesToScroll: 1,
-        speed: 1000,
+        speed: 400,
         cssEase: 'ease',
         waitForAnimate: false,
     });
@@ -71,12 +34,12 @@ $(document).ready(function(){
 
 
     // Основные события слайдера
-    $('.sliderbig').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log(currentSlide)
-    })
-    $('.sliderbig').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        console.log(currentSlide)
-    })
+    // $('.sliderbig').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //     console.log(currentSlide)
+    // })
+    // $('.sliderbig').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    //     console.log(currentSlide)
+    // })
 
     // Основные методы слайдера
     // $('.slider').slick('setPosition'); //"сброс" карусели
