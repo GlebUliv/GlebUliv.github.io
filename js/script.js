@@ -34,14 +34,5 @@ $(document).ready(function(){
         waitForAnimate: false,
     });
 
-    var scroll = function(e) {
-        if (stopScrollX || stopScrollY) {
-            e.preventDefault();
-            e.stopPropagation();
-            window.scroll(scrollToX, scrollToY);
-        }
-    }
-    
-    document.addEventListener('mousewheel', scroll, false);
 });
 

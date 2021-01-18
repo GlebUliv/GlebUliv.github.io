@@ -20,7 +20,7 @@ body .mainwrapper {
 .wrapper {
   max-width: 500px;
   height: 100%;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -231,10 +231,10 @@ body .mainwrapper {
             transform: scale(1.1);
   }
   .wrapper .header .header__info p {
-    font-size: 30px;
+    font-size: 24px;
   }
   .wrapper .header .header__info a i {
-    font-size: 25px;
+    font-size: 20px;
   }
   .wrapper .header .content__info__on {
     padding: 50px 0 20px 0;
@@ -264,10 +264,10 @@ body .mainwrapper {
 
 @media screen and (max-width: 1024px) {
   .wrapper .header .header__info p {
-    font-size: 28px;
+    font-size: 20px;
   }
   .wrapper .header .header__info a i {
-    font-size: 22px;
+    font-size: 18px;
   }
   .wrapper .header .content__info__on img {
     width: 130px;
@@ -293,7 +293,7 @@ body .mainwrapper {
 
 @media screen and (max-width: 768px) {
   .wrapper .header .header__info p {
-    font-size: 20px;
+    font-size: 16px;
   }
   .wrapper .header .content__info__on {
     margin-bottom: 10px;
@@ -337,10 +337,10 @@ body .mainwrapper {
 
 @media screen and (max-width: 425px) {
   .wrapper .header .header__info p {
-    font-size: 18px;
+    font-size: 15px;
   }
   .wrapper .header .header__info a i {
-    font-size: 18px;
+    font-size: 16px;
   }
   .wrapper .header .content__info__on {
     margin-bottom: 0;
@@ -383,33 +383,33 @@ body .mainwrapper {
     margin-bottom: 30px;
   }
   .wrapper .header .header__info p {
-    font-size: 18px;
+    font-size: 13px;
   }
   .wrapper .header .header__info a i {
-    font-size: 18px;
+    font-size: 15px;
   }
   .wrapper .header .content__info__on {
     padding: 10px 0 0 0;
     margin-bottom: 30px;
   }
   .wrapper .header .content__info__on img {
-    width: 100px;
+    width: 120px;
     height: auto;
   }
   .wrapper .sliderbig {
-    height: 300px;
+    height: 280px;
     margin-bottom: 30px;
   }
   .wrapper .sliderbig .slick-list {
-    height: 300px;
+    height: 280px;
   }
   .wrapper .sliderbig .slick-list .slick-track {
     padding-top: 10px;
-    height: 300px;
+    height: 280px;
   }
   .wrapper .sliderbig .slick-list .slick-track .slick-slide {
     padding: 0 30px;
-    height: 300px;
+    height: 280px;
   }
   .wrapper .sliderbig .slick-list .slick-track .slick-slide img {
     width: inherit;
@@ -427,7 +427,7 @@ body .mainwrapper {
     margin-bottom: 20px;
   }
   .wrapper .content__info__under img {
-    width: 110px;
+    width: 130px;
     height: auto;
   }
   .wrapper .slidersmall .slidersmall__info {
@@ -437,10 +437,10 @@ body .mainwrapper {
 
 @media screen and (max-width: 320px) {
   .wrapper .header .header__info p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .wrapper .header .header__info a i {
-    font-size: 16px;
+    font-size: 14px;
   }
   .wrapper .header .content__info__on {
     padding: 0 0 10px 0;

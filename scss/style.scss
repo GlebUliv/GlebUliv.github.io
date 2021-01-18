@@ -20,7 +20,7 @@ body{
 .wrapper{
     max-width: 500px;
     height: 100%;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
     text-align: center;
     margin: 0 auto;
     .header{
@@ -195,11 +195,11 @@ body{
         .header{
             .header__info{
                 p{
-                    font-size: 30px;
+                    font-size: 24px;
                 }
                 a{
                     i{
-                        font-size: 25px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -242,11 +242,11 @@ body{
         .header{
             .header__info{
                 p{
-                    font-size: 28px;
+                    font-size: 20px;
                 }
                 a{
                     i{
-                        font-size: 22px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -287,7 +287,7 @@ body{
         .header{
             .header__info{
                 p{
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
             .content__info__on{
@@ -340,11 +340,11 @@ body{
         .header{
             .header__info{
                 p{
-                    font-size: 18px;
+                    font-size: 15px;
                 }
                 a{
                     i{
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -400,11 +400,11 @@ body{
             .header__info{
                 margin-bottom: 30px;
                 p{
-                    font-size: 18px;
+                    font-size: 13px;
                 }
                 a{
                     i{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -412,22 +412,22 @@ body{
                 padding: 10px 0 0 0;
                 margin-bottom: 30px;
                 img{
-                    width: 100px;
+                    width: 120px;
                     height: auto;
                 }
             }
         }
         .sliderbig{
-            height: 300px;
+            height: 280px;
             margin-bottom: 30px;
             .slick-list{
-                height: 300px;
+                height: 280px;
                 .slick-track{
                     padding-top: 10px;
-                    height: 300px;
+                    height: 280px;
                     .slick-slide {
                         padding: 0 30px;
-                        height: 300px;
+                        height: 280px;
                         img{
                             width: inherit;
                             height: inherit;
@@ -444,7 +444,7 @@ body{
             padding: 10px 0 40px 0;
             margin-bottom: 20px;
             img{
-                width: 110px;
+                width: 130px;
                 height: auto;
             }
         }
@@ -463,11 +463,11 @@ body{
             .header__info{
                 // margin-bottom: 60px;
                 p{
-                    font-size: 16px;
+                    font-size: 12px;
                 }
                 a{
                     i{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
