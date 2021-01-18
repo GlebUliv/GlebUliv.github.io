@@ -209,6 +209,9 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
+  body {
+    position: relative;
+  }
   .slick-current {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -217,6 +220,9 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
+  body {
+    position: relative;
+  }
   .slick-current {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
