@@ -3,6 +3,26 @@ body {
   font-family: 'Univers LT Roman';
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .content__header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,14 +61,6 @@ body {
 .content__header .berlin-berlin img {
   max-width: 150px;
   height: auto;
-}
-
-.content__header .info-help {
-  padding: 20px;
-}
-
-.content__header .info-help a i {
-  color: #fff;
 }
 
 .main-content {
@@ -181,6 +193,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .info-help a img {
+    width: 90px;
+  }
   .main-content {
     padding: 150px 150px;
   }
@@ -207,9 +222,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .content__header {
-    margin-bottom: 50px;
-  }
   .content__header .header-logo img {
     max-width: 65px;
     height: auto;
@@ -218,8 +230,8 @@ body {
     max-width: 220px;
     height: auto;
   }
-  .content__header .info-help a i {
-    font-size: 18px;
+  .content__header .info-help a img {
+    width: 60px;
   }
   .main-content {
     padding: 110px 150px;
@@ -265,17 +277,18 @@ body {
     max-width: 160px;
     height: auto;
   }
-  .info-help a i {
-    font-size: 20px;
+  .info-help a img {
+    width: 60px;
   }
   .main-content {
-    padding: 90px 20px;
+    padding: 110px 20px;
   }
   .main-content .main-content__info .first-child-h1 {
-    font-size: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info h2 {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 20px;
   }
   .main-content .main-content__info .first-child-p {
@@ -284,8 +297,9 @@ body {
     line-height: 12px;
   }
   .main-content .main-content__info .last-child-h1 {
-    font-size: 24px;
+    font-size: 14px;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info .last-child-p {
     font-size: 14px;
@@ -294,18 +308,27 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .content__header {
-    margin-bottom: 30px;
+  .content__header .berlin-berlin a img {
+    max-width: 140px;
+  }
+  .content__header .info-help {
+    padding: 0;
+  }
+  .content__header .info-help a img {
+    width: 40px;
+    height: auto;
   }
   .main-content {
-    padding: 80px 20px;
+    padding: 110px 20px 80px 20px;
   }
   .main-content .main-content__info .first-child-h1 {
-    font-size: 18px;
+    margin-bottom: .80%;
+    font-size: 14px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info h2 {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .main-content .main-content__info .first-child-p {
     margin-bottom: 20px;
@@ -314,7 +337,8 @@ body {
   }
   .main-content .main-content__info .last-child-h1 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info .last-child-p {
     margin-bottom: 30px;
@@ -323,6 +347,9 @@ body {
   }
   .main-content .main-content_contact a {
     font-size: 20px;
+  }
+  .main-content .main-content__ar-effect img {
+    width: 40px;
   }
 }
 
@@ -341,17 +368,19 @@ body {
     padding: 80px 20px;
   }
   .main-content .main-content__info .first-child-h1 {
-    font-size: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info h2 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .main-content .main-content__info .first-child-p {
     font-size: 12px;
     text-align: left;
   }
   .main-content .main-content__info .last-child-h1 {
-    font-size: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   .main-content .main-content__info .last-child-p {
     font-size: 12px;
