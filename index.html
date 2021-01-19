@@ -11,21 +11,70 @@
     <link rel="stylesheet" href="./fonts/style.css">
     <!-- My style -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <title>Document</title>
 </head>
-<body touch-action="none" unresolved> 
+<body> 
     <div class="mainwrapper">
+        <div class="modal" data-modal="1">
+            <div class="modal__content-header">
+                <div class="modal__header-logo">
+                    <a href="./index.html"><img src="./img/Aditional_img/Img1.png" alt=""></a>
+                    <p class="modal__header-title">highsnobiety present</p>
+                </div>
+                <!-- <div class="modal__header-title">
+                    <p>highsnobiety present</p>
+                </div> -->
+            </div>
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <!-- <p class="modal__title">Заголовок окна 1</p> -->
+            <img class="berlin-img" src="./img/Berlin1.png" alt="">
+            <p class="popup-first-p">
+                Highsnobiety presents BERLIN AUGMENTED BERLIN, an immersive group exhibition with AR art. Visitors are invited to use a smartphone or tablet to place the eight sculptures by Berlin artists in public spaces or within their own four walls. In this manner, visitors are able to experience art on the border between the real and the virtual world and refashion their own immediate environment.
+            </p>
+            <p class="popup-last-p">
+                Artists: <br>
+                Cibelle Cavalli Bastos<br>
+                Joachim Bosse<br>
+                Bianca Kennedy & The Swan Collective<br>
+                Manuel Rossner<br>
+                Sucuk & Bratwurst<br>
+                Tabitha Swanson<br>
+                Ruohan Wang<br>
+                Curated by Anika Meier and Highsnobiety
+            </p>
+            <img class="berlin-img2" src="./img/Berlin2.png" alt=""><br>
+            <a href="" class="ar-instructions">AR Instructions</a>
+        </div>
         <div class="wrapper">
             <div class="header">
                 <div class="header__info">
                     <p>highsnobiety present</p>
-                    <a href=""><img src="./img/info.png" alt=""></a>
+                    <a class="js-open-modal" data-modal="1" href=""><img src="./img/info.png" alt=""></a>
                 </div>
                 <div class="content__info__on">
                     <img src="./img/Berlin1.png" alt="">
                 </div>
             </div>
+            <!-- <div class="popup-info">
+                <img src="./img/Berlin1.png" alt="">
+                <p class="popup-first-p">
+                    Highsnobiety presents BERLIN AUGMENTED BERLIN, an immersive group exhibition with AR art. Visitors are invited to use a smartphone or tablet to place the eight sculptures by Berlin artists in public spaces or within their own four walls. In this manner, visitors are able to experience art on the border between the real and the virtual world and refashion their own immediate environment.
+                </p>
+                <p class="popup-last-p">
+                    Artists: 
+                Cibelle Cavalli Bastos
+                Joachim Bosse
+                Bianca Kennedy & The Swan Collective
+                Manuel Rossner
+                Sucuk & Bratwurst
+                Tabitha Swanson
+                Ruohan Wang
+                Curated by Anika Meier and Highsnobiety
+                </p>
+                <img src="./img/Berlin2.png" alt="">
+            </div> -->
             <div class="sliderbig">
                 <!-- <div class="sliderbig__item">
                     <img src="./img/Slider_img/1_kennedy_swan collective.jpg" alt="">
@@ -105,6 +154,79 @@
     <script src="./js/slick.min.js"></script>
     <!-- My script -->
     <script src="./js/script.js"></script>
+
+    <script>
+        !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+   var modalButtons = document.querySelectorAll('.js-open-modal'),
+       overlay      = document.querySelector('.js-overlay-modal'),
+       closeButtons = document.querySelectorAll('.js-modal-close');
+
+
+   /* Перебираем массив кнопок */
+   modalButtons.forEach(function(item){
+
+      /* Назначаем каждой кнопке обработчик клика */
+      item.addEventListener('click', function(e) {
+
+         /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
+         e.preventDefault();
+
+         /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
+         var modalId = this.getAttribute('data-modal'),
+             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+
+
+         /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+         modalElem.classList.add('active');
+         overlay.classList.add('active');
+      }); // end click
+
+   }); // end foreach
+
+
+   closeButtons.forEach(function(item){
+
+      item.addEventListener('click', function(e) {
+         var parentModal = this.closest('.modal');
+
+         parentModal.classList.remove('active');
+         overlay.classList.remove('active');
+      });
+
+   }); // end foreach
+
+
+    document.body.addEventListener('keyup', function (e) {
+        var key = e.keyCode;
+
+        if (key == 27) {
+
+            document.querySelector('.modal.active').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        };
+    }, false);
+
+
+    overlay.addEventListener('click', function() {
+        document.querySelector('.modal.active').classList.remove('active');
+        this.classList.remove('active');
+    });
+
+
+
+
+}); // end ready
+    </script>
     
 </body>
 </html>
