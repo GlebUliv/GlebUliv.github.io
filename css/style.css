@@ -35,12 +35,12 @@ body {
 
 .wrapper .header .header__info a {
   position: absolute;
-  right: 20px;
-  bottom: 0px;
+  right: 6px;
+  bottom: -14px;
 }
 
-.wrapper .header .header__info a i {
-  color: #fff;
+.wrapper .header .header__info a img {
+  width: 40px;
 }
 
 .wrapper .header .content__info__on {
@@ -199,6 +199,7 @@ body {
   color: #fff;
   letter-spacing: 1px;
   margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .slidersmall .slidersmall__item .slidersmall__info a {
@@ -206,6 +207,8 @@ body {
   color: #fff;
   outline: none;
   letter-spacing: .7px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1600px) {
@@ -336,7 +339,7 @@ body {
   }
   .wrapper .header .content__info__on {
     margin-bottom: 0;
-    padding: 20px 0 10px 0;
+    padding: 50px 0 20px 0;
   }
   .wrapper .header .content__info__on img {
     width: 120px;
@@ -359,7 +362,7 @@ body {
        object-fit: cover;
   }
   .wrapper .content__info__under {
-    padding: 60px 0 40px 0;
+    padding: 20px 0 40px 0;
   }
   .wrapper .content__info__under img {
     width: 130px;
@@ -372,7 +375,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .wrapper .header .header__info {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
   }
   .wrapper .header .header__info p {
     font-size: 13px;
@@ -427,10 +430,18 @@ body {
   }
   .wrapper .slidersmall .slidersmall__info p {
     padding: 0 20px;
+    font-size: 14px;
+  }
+  .wrapper .slidersmall .slidersmall__info a {
+    font-size: 14px;
+    text-transform: uppercase;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .wrapper .header .header__info {
+    margin-bottom: 105px;
+  }
   .wrapper .header .header__info p {
     font-size: 12px;
   }
@@ -439,7 +450,7 @@ body {
   }
   .wrapper .header .content__info__on {
     padding: 0 0 10px 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .wrapper .header .content__info__on img {
     width: 80px;
@@ -467,7 +478,7 @@ body {
   }
   .wrapper .content__info__under {
     padding: 0px 0 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .wrapper .content__info__under img {
     width: 90px;

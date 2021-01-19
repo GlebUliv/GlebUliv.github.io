@@ -374,27 +374,31 @@ body{
         .main-content__info{
             .first-child-h1{
                 margin-bottom: .80%;
-                font-size: 14px;
+                font-size: 13px;
                 text-transform: uppercase;
             }
             h2{
                 margin-bottom: 20px;
-                font-size: 14px;
+                font-size: 13px;
             }
             .first-child-p{
                 margin-bottom: 20px;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 12px;
+                letter-spacing: 0;
+                padding: 0 50px;
             }
             .last-child-h1{
                 margin-bottom: 20px;
-                font-size: 14px;
+                font-size: 13px;
                 text-transform: uppercase;
             }
             .last-child-p{
                 margin-bottom: 30px;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 12px;
+                letter-spacing: 0;
+                padding: 0 50px;
             }
         }
         .main-content_contact{
