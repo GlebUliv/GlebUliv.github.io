@@ -36,11 +36,11 @@ body {
 .wrapper .header .header__info a {
   position: absolute;
   right: 6px;
-  bottom: -14px;
+  bottom: -18px;
 }
 
 .wrapper .header .header__info a img {
-  width: 40px;
+  width: 45px;
 }
 
 .wrapper .header .content__info__on {
@@ -375,7 +375,8 @@ body {
 
 @media screen and (max-width: 375px) {
   .wrapper .header .header__info {
-    margin-bottom: 75px;
+    margin-bottom: 55px;
+    margin-top: 5px;
   }
   .wrapper .header .header__info p {
     font-size: 13px;
@@ -419,7 +420,6 @@ body {
   }
   .wrapper .content__info__under {
     padding: 10px 0 40px 0;
-    margin-bottom: 20px;
   }
   .wrapper .content__info__under img {
     width: 130px;

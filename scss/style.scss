@@ -30,9 +30,9 @@ body{
             a{
                 position: absolute;
                 right: 6px;
-                bottom: -14px;
+                bottom: -18px;
                 img{
-                    width: 40px;
+                    width: 45px;
                 }
             }
         }
@@ -403,7 +403,8 @@ body{
         .header{
             // margin-bottom: 50px;
             .header__info{
-                margin-bottom: 75px;
+                margin-bottom: 55px;
+                margin-top: 5px;
                 p{
                     font-size: 13px;
                 }
@@ -447,7 +448,7 @@ body{
         }
         .content__info__under{
             padding: 10px 0 40px 0;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             img{
                 width: 130px;
                 height: auto;
