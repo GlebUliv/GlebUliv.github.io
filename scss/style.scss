@@ -177,9 +177,9 @@ body{
 // ------------------- MediaQuery ------------------
 
 @media screen and (max-width: 1600px){
-    body{
-        position: relative;
-    }
+    // body{
+    //     position: relative;
+    // }
     .slick-current{
         transform: scale(1.1);
     }
@@ -187,9 +187,9 @@ body{
 
 
 @media screen and (max-width: 1440px){
-    body{
-        position: relative;
-    }
+    // body{
+    //     position: relative;
+    // }
     .slick-current{
         transform: scale(1.1);
     }
